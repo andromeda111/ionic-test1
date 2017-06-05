@@ -1,0 +1,16 @@
+<ion-view title="Home Page" id="page1" style="background-color:#C4DAFC;">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="homePage-list3">
+      <div class="item item-body" id="homePage-list-item-container2">
+        <div id="homePage-markdown5" ng-repeat="dream in dreamsArr" class="show-list-numbers-and-dots">
+          <p>{{dream.id}}</p>
+          <p>{{dream.body}}</p>
+          <p>{{dream.dream_date}}</p>
+        </div>
+      </div>
+    </ion-list>
+    <button id="homePage-button11" ng-click="getDreams()" class="button button-positive button-block">Get stuff</button>
+    <button id="homePage-button12" ng-click="deleteDreams()" class="button button-positive button-block">Delete last item</button>
+    <button ion-button clear>Primary Clear</button>
+  </ion-content>
+</ion-view>
